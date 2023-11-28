@@ -1,0 +1,102 @@
+.content {
+    color: black;
+    background-color: #9FD8CB;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #2D3319;
+    color: #D6E5E3;
+    height: 150px;
+}
+
+.logo-link {
+    grid-column: 1/2;
+}
+
+.logo {
+    width: 80px;
+    border-radius: 50%;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    color: #D6E5E3;
+    text-decoration: none;
+    text-align: center;
+    padding: 25px;
+}
+
+nav a:hover {
+    background-color: #9FD8CB;
+}
+
+main {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.welcome {
+    float: left;
+}
+
+.beetle-picture {
+    width: 30%;
+    padding: 30px;
+}
+
+.welcome-text {
+    float: left;
+    grid-row: 1/2;
+}
+
+.updates {
+    grid-row: 2/3;
+}
+
+.updates img {
+    width: 30%;
+    padding: 30px;
+    justify-content: left;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 3fr 2fr 1fr 1fr 1fr;
+}
+
+footer a {
+    text-decoration: none;
+    color: #2D3319;
+}
+
+footer p:nth-of-type(1) {
+    grid-column: 1/2;
+}
+
+footer p {
+    grid-column: 2/3;  
+}
+
+.instagram-link {
+    grid-column: 3/4;
+}
+
+.tumblr-link {
+    grid-column: 4/5;    
+}
+
+.linkdin-link {
+    grid-column: 5/6;    
+}
+
+.socials img {
+    width: 50px;
+    align-items: start;
+}
