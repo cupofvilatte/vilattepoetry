@@ -1,3 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Fira+Sans:wght@500&family=Lora:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Fira+Sans:wght@500&family=Lora:wght@500;600&family=Sometype+Mono:wght@400;500&display=swap');
+
+:root {
+
+    --heading-font: 'Sometype Mono', monospace;
+    --paragraph-font: 'Lora', serif;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+}
+
+p {
+    font-family: var(--paragraph-font);
+    padding: 1em;
+}
+
 .content {
     color: black;
     background-color: #9FD8CB;
@@ -9,21 +28,30 @@ header {
     background-color: #2D3319;
     color: #D6E5E3;
     height: 150px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
 }
 
 .logo-link {
     grid-column: 1/2;
+    place-self: center;
+    
 }
 
 .logo {
-    width: 80px;
+    width: 120px;
     border-radius: 50%;
-    padding: 20px;
+}
+
+.logo:hover {
+    opacity: .6;
+    transform: scale(1.1);
 }
 
 nav {
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 nav a {
@@ -35,6 +63,7 @@ nav a {
 
 nav a:hover {
     background-color: #9FD8CB;
+    color: #2D3319;
 }
 
 main {
@@ -42,61 +71,59 @@ main {
     grid-template-rows: 1fr 1fr;
 }
 
-.welcome {
-    float: left;
-}
-
 .beetle-picture {
     width: 30%;
-    padding: 30px;
+    margin: 30px;
+    float: left;
+    border-radius: 15%;
+    border: solid #2D3319 15px;
 }
 
 .welcome-text {
-    float: left;
     grid-row: 1/2;
+    text-align: justify;
+    padding-top: 30px;
 }
 
 .updates {
     grid-row: 2/3;
 }
 
-.updates img {
+.updates-text {
+    grid-row: 2/3;
+    text-align: right;
+    padding-top: 30px;
+}
+
+.bookshelf-picture {
+    float: right;
+    grid-row: 2/3;
     width: 30%;
-    padding: 30px;
-    justify-content: left;
+    margin: 30px;
+    border-radius: 15%;
+    border: solid #2D3319 15px;
 }
 
 footer {
-    display: grid;
-    grid-template-columns: 3fr 2fr 1fr 1fr 1fr;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #2D3319;
+    color: #D6E5E3;
+    height: 150px
 }
+
 
 footer a {
     text-decoration: none;
+    color: #D6E5E3;
+}
+
+footer a:hover {
+    background-color: #9FD8CB;
     color: #2D3319;
-}
-
-footer p:nth-of-type(1) {
-    grid-column: 1/2;
-}
-
-footer p {
-    grid-column: 2/3;  
-}
-
-.instagram-link {
-    grid-column: 3/4;
-}
-
-.tumblr-link {
-    grid-column: 4/5;    
-}
-
-.linkdin-link {
-    grid-column: 5/6;    
 }
 
 .socials img {
     width: 50px;
-    align-items: start;
 }
