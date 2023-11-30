@@ -17,12 +17,19 @@ p {
     padding: 1em;
 }
 
+body {
+   margin: 0 auto;
+}
+
 .content {
     color: black;
     background-color: #9FD8CB;
     max-width: 1600px;
     margin: 0 auto;
 }
+
+
+/* HEADER CSS */
 
 header {
     background-color: #2D3319;
@@ -67,7 +74,10 @@ nav a:hover {
     color: #2D3319;
 }
 
-main {
+
+/* HOME PAGE CSS */
+
+.home-page-main {
     display: grid;
     grid-template-rows: 1fr 1fr;
 }
@@ -113,6 +123,8 @@ main {
     border: solid #2D3319 15px;
 }
 
+/* FOOTER CSS */
+
 footer {
     display: flex;
     justify-content: space-around;
@@ -136,3 +148,44 @@ footer a:hover {
 .socials img {
     width: 50px;
 }
+
+/* POETRY PAGE CSS */
+
+.poems {
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+}
+
+.viathome-image {
+    padding: 35px;
+    grid-column: 2/3;
+    justify-self: center;
+}
+
+.viathome-image img {
+    height: 50%;
+    float: right;
+    border: solid #2D3319 5px;
+}
+
+.viathome-image p {
+    padding-top: 20px;
+}
+
+.poem-text {
+    grid-row-start: 1;
+}
+
+.glass-poem {
+    margin-left: 25px;
+    grid-column: 1/2;
+}
+
+.god-and-child-poem {
+    margin: 25px;
+    grid-column: 1/2;
+}
+
+
+/* BIO PAGE CSS */
