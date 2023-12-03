@@ -191,24 +191,40 @@ footer a:hover {
     justify-content: space-around;
 }
 
+.child-image {
+    grid-column: 1/2;
+    justify-items: center;
+}
+
 .child-image img {
-    width: 40%;
+    width: 70%;
     margin: 25px;
     border: solid #2D3319 5px;
 }
 
+.glass-image {
+    grid-column: 2/3;
+    justify-content: center;
+    align-items: center;
+}
+
 .glass-image img {
-    width: 40%;
+    width: 70%;
     margin: 25px;
     border: solid #2D3319 5px;
 }
 
 .more {
-    width: 40%;
+    width: 70%;
+    max-height: 200px;
     margin: 25px;
     background-color: #D6E5E3;
     border: solid #2D3319 5px;
     text-align: center;
+    grid-column: 3/4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .accordion {
@@ -237,7 +253,8 @@ footer a:hover {
 
 .panel {
     padding: 0 18px;
-    display: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     overflow: hidden;
 }
 
