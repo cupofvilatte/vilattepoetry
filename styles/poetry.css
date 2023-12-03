@@ -253,9 +253,13 @@ footer a:hover {
 
 .panel {
     padding: 0 18px;
+    display: none;
+    overflow: hidden;
+}
+
+.hidden-content {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    overflow: hidden;
 }
 
 /* BIO PAGE CSS */
