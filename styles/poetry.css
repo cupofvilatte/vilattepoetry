@@ -263,3 +263,52 @@ footer a:hover {
 }
 
 /* BIO PAGE CSS */
+
+.bio-main {
+    margin: 0 auto;
+    display: grid;
+}
+
+
+
+.ata-author-photo img {
+    float: right;
+    width: 40%;
+    border: solid #517664 5px;
+    margin: 30px;
+}
+
+
+.ata-bio {
+    margin: 30px;
+
+}
+
+.ata-bio h2 {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.bio {
+    grid-row: 1/2;
+}
+
+.extra {
+    grid-row: 2/3;
+}
+
+.ata-education {
+    margin: 30px 5px 30px 5px;
+}
+
+.ata-education h2 {
+    text-align: center;
+}
+
+.ata-work {
+    margin: 30px 5px 30px 5px;
+}
+
+.ata-work h2 {
+    text-align: center;
+}
